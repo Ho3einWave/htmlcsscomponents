@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <title>Pagination Component</title>
+    <style>
+        /*
+		SPACING SYSTEM (px)
+		2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+		FONT SIZE SYSTEM (px)
+		10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+		*/
+        /* 
+
+
+
+		*/
+        /* 
+		Mail color #15aabf
+
+		GREY COLOR #343a40
+
+
+
+		*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Inter", sans-serif;
+            color: #343a40;
+            line-height: 1;
+        }
+        
+        .pagination {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        svg {
+            width: 18px;
+            height: 18px;
+            stroke: #15aabf;
+        }
+        
+        ul {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        
+        .btn {
+            background-color: #fff;
+            border-radius: 50%;
+            border: 1px solid #15aabf;
+            padding: 6px;
+            width: 38px;
+            height: 38px;
+            cursor: pointer;
+            margin: 0 12px;
+        }
+        
+        .btn:hover {
+            background-color: #15aabf;
+        }
+        
+        .btn:hover svg {
+            stroke: #fff;
+        }
+        
+        .link-page:link,
+        .link-page:visited {
+            display: inline-block;
+            text-decoration: none;
+            color: #343a40;
+            width: 32px;
+            height: 32px;
+            padding: 8px;
+            text-align: center;
+            border-radius: 50%;
+        }
+        
+        .link-page:hover,
+        .link-page:active,
+        .link-page.link-page--currect {
+            background-color: #15aabf;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagination">
+        <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+        </button>
+        <ul>
+
+
+            <li><a class="link-page" href="#">1</a></li>
+            <li><a class="link-page" href="#">2</a></li>
+            <li><a class="link-page" href="#">3</a></li>
+            <li><a class="link-page link-page--currect" href="#">4</a></li>
+            <li><a class="link-page" href="#">5</a></li>
+            <li><a class="link-page" href="#">6</a></li>
+            <li>...</li>
+            <li><a class="link-page" href="#">23</a></li>
+
+
+        </ul>
+        <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+        </button>
+    </div>
+</body>
+
+</html>
