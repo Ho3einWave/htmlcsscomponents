@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Layout</title>
+    <style>
+        /*
+		SPACING SYSTEM (px)
+		2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+		FONT SIZE SYSTEM (px)
+		10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+		*/
+        /* 
+
+
+
+		*/
+        /* 
+		Mail color #15aabf
+
+		GREY COLOR #343a40
+
+
+
+		*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: sans-serif;
+            color: #343a40;
+            line-height: 1;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 80px 400px 1fr 250px;
+            grid-template-rows: 80px 1fr;
+        }
+        
+        nav,
+        section,
+        main,
+        aside {
+            padding-top: 24px;
+        }
+        
+        nav {
+            background-color: #343a40;
+            grid-row: 1 / -1;
+            color: #e9ecef;
+        }
+        
+        menu {
+            background-color: #15aabf;
+            color: #fff;
+            grid-column: 2 /-1;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 0 40px;
+        }
+        
+        button {
+            display: inline-block;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #0c8599;
+            border: none;
+            cursor: pointer;
+            color: #e9ecef;
+            padding: 8px 12px;
+        }
+        
+        button:last-child {
+            background-color: #e03131;
+            margin-left: auto;
+        }
+        
+        section {
+            background-color: #e9ecef;
+            padding: 40px;
+            display: flex;
+            overflow: scroll;
+            gap: 40px;
+            flex-direction: column;
+        }
+        
+        .email {
+            background-color: #adb5bd;
+            height: 96px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        aside {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>Nav</nav>
+    <menu>
+        <button>New 📧</button>
+        <button>Reply 📬</button>
+        <button>Forward 📨</button>
+        <button>Mark Unread 👀</button>
+        <button>Trash 📁</button>
+    </menu>
+    <section>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+        <div class="email">Email</div>
+    </section>
+    <main>Email view</main>
+    <aside>Additional info</aside>
+</body>
+
+</html>
